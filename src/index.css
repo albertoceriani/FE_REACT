@@ -134,3 +134,12 @@ code {
     text-transform: uppercase;
     font-weight: 700;
 }
+
+.biglietto {
+  display: flex;
+  gap: 20px;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  margin-bottom: 5px;
+}

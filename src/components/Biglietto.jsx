@@ -1,10 +1,8 @@
-export default function Biglietto() {
-    let nome = "Filippo";
-    let destinazione = "Dublino";
+export default function Biglietto({nome="Viaggiatore anonimo", destinazione}) {
     return (
-        <section>
-            <p>{nome}</p>
-            <p>{destinazione}</p>
+        <section className="biglietto">
+            <p>Nome viaggiatore: {nome}</p>
+            <p>Destinazione: {destinazione}</p>
         </section>
     );
 }
