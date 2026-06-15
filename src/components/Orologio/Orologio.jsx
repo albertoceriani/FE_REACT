@@ -1,4 +1,5 @@
 import styles from './Orologio.module.css';
+import Box from "../Box/Box";
 import {useState, useEffect} from 'react';
 
 //funzione figlia
@@ -23,8 +24,13 @@ export default function Orologio() {
   const [visible, setVisibile] = useState(true);
 
   return (
-    <div>
-      <OrologioFiglio />
-    </div>
+    <Box>
+      {visible ? <OrologioFiglio /> : <div className={styles.placeholder}>Orologio smontato - il timer di è fermato</div>} 
+      <div className={styles.controlli}>
+        <button className={styles.btnMostra} onClick={()=> setVisibile(!visible)}>
+          {visible ? "Nascondi orologio" : "Mostra orologio"}
+          </button>
+      </div>
+    </Box>
   );
 }

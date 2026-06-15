@@ -1,5 +1,5 @@
 .box {
-  border: 3px solid var(--colore-bordo);
+  border: 3px solid lightgray;
   padding: 5%;
   margin: 20px;
 }
