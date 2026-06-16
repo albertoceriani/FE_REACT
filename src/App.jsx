@@ -1,6 +1,7 @@
 // import { useState } from "react";
 import "./App.css";
-import FormValidation from "./components/FormValidation/FormValidation";
+import ConvertitoreTemperatura from "./components/ConvertitoreTemperatura/ConvertitoreTemperatura";
+//import FormValidation from "./components/FormValidation/FormValidation";
 //import RegistraStudente from "./components/RegistraStudente/RegistraStudente";
 // import ChangeTitle from "./components/ChangeTitle/ChangeTitle";
 // import Orologio from "./components/Orologio/Orologio";
@@ -14,8 +15,9 @@ function App() {
       <ChangeTitle /> 
       <ResettaFocus />
       <ContatoreUseRef/>
-      <RegistraStudente />*/}
-      <FormValidation />
+      <RegistraStudente />
+      <FormValidation />*/}
+      <ConvertitoreTemperatura/>
     </>
   );
 }
