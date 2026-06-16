@@ -1,5 +1,6 @@
 // import { useState } from "react";
 import "./App.css";
+import FormValidation from "./components/FormValidation/FormValidation";
 //import RegistraStudente from "./components/RegistraStudente/RegistraStudente";
 // import ChangeTitle from "./components/ChangeTitle/ChangeTitle";
 // import Orologio from "./components/Orologio/Orologio";
@@ -14,6 +15,7 @@ function App() {
       <ResettaFocus />
       <ContatoreUseRef/>
       <RegistraStudente />*/}
+      <FormValidation />
     </>
   );
 }
