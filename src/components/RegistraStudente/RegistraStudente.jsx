@@ -19,10 +19,12 @@ export default function RegistraStudente() {
   //Ogni studente sarà un oggetto {id:"", nome:""}
 
   const aggiungi = () => {
-    setStudenti([...studenti, {id: contatore.current, nome: nomeRef.current.value}]);
-    contatore.current++;
-    nomeRef.current.value = '';
-    nomeRef.current.focus();
+    if(nomeRef.current.value.trim()) {
+      setStudenti([...studenti, {id: contatore.current, nome: nomeRef.current.value}]);
+      contatore.current++;
+      nomeRef.current.value = '';
+      nomeRef.current.focus();
+    }
   };
 
   const elimina = id => {
